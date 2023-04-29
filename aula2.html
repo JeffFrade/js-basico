@@ -1,0 +1,53 @@
+<script type="text/javascript">
+    /*let nome = prompt("Digite seu nome");
+    document.write("O seu nome é: " + nome);*/
+
+    // Criando variáveis:
+    let n1, n2, soma, subt, mult, divi, mod;
+
+    // Atribuindo valor as variáveis:
+    n1 = 10;
+    n2 = 3;
+
+    soma = n1 + n2;
+    subt = n1 - n2;
+    mult = n1 * n2;
+    divi = n1 / n2;
+    mod = n1 % n2;
+
+    document.write("n1: " + n1);
+    document.write("<br/>");
+    document.write("n2: " + n2);
+    document.write("<hr/>");
+    document.write("Soma: " + soma);
+    document.write("<hr/>");
+    document.write("Subtração: " + subt);
+    document.write("<hr/>");
+    document.write("Multiplicação: " + mult);
+    document.write("<hr/>");
+    document.write("Divisão: " + divi);
+    document.write("<hr/>");
+    document.write("Módulo (Mod (Resto da divisão)): " + mod);
+    document.write("<hr/>");
+
+    /*
+        Tipos primitivos (Quais os tipos que as variáveis podem ter):
+
+        - integer / int = Inteiro => Números inteiros (5, 10)
+        - string = Texto (O nosso nome pode ser um exemplo de string (Texto))
+        - char = 1 caractére (Exemplo: sexo: "M")
+        - boolean = Binário (0, 1) => True ou False
+        - float, double => Números com ponto flutuantes (3.333333...)
+    */
+
+    // Fórmula Celsius para Fahrenheit: (F = 1.8 * C + 32)
+
+    // O parseFloat() pega o valor vindo do prompt (Que retorna/devolve uma string) e transforma em float para que possa ser trabalhado como número
+    // Para pegar valores inteiros utilize o parseInt()
+    let celsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
+    let fahrenheit = 1.8 * celsius + 32;
+
+    document.write("Temperatura em Celsius: " + celsius + "ºC");
+    document.write("<br/>");
+    document.write("Temperatura em Fahrenheit: " + fahrenheit + "ºF");
+</script>
